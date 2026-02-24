@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  text-align: center;
+  gap: 4px;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  display: grid;
+  background-color: #393f4d;
+  grid-column: 2 / 6;
+  grid-template-columns: 1fr 2fr;
+}
+
+.search-container {
+    display: grid;
+    grid-column: 2 / 6;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.logo {
+  justify-self: start;
+}
+
+.menu {
+  align-self: center;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.menu ul,
+.menu li {
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.sidebar {
+  display: grid;
+  background-color: #2995d4;
+  grid-row: 1 / 4;
+  gap: 50px;
+}
+
+.sidebar .side-content {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  background-color: #bccbde;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  height: 200px;
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  padding: 5px;
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
