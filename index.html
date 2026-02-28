@@ -1,106 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holy Grail Mockup</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-        <div class="search-container">
-            <form action="https://google.com/search" method="get">
-                <input type="text" placeholder="Search Google..." name="q" class="search-input" aria-label="Search">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="search-container">
+                <form action="https://google.com/search" method="get">
                 <button type="submit" class="search-button">Search</button>
-            </form>
-        </div>
+                <input type="text" placeholder="Search Google..." name="q" class="search-input" aria-label="Search">
+                </form>
+            </div>
 
-      <div class="header">
+    <aside class="left">
+        <div class="sidebar">
+            <div class="dash-logo">
+                <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/ice-cream.svg"
+                alt="Dashboard icon" width="30" height="30">
+                <h5>Dashboard</h5>
+            </div>
+            
+            <nav>
+                <ul class="side-content-a">
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/home-variant-outline.svg"
+                        alt="Home icon" width="20" height="20">
+                        <a class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/account-details-outline.svg"
+                        alt="Profle icon" width="20" height="20">
+                        <a class="nav-link">Profile</a>
+                    </li>
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/message-alert-outline.svg"
+                        alt="Message icon" width="20" height="20">
+                        <a class="nav-link">Messages</a>
+                    </li>
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/history.svg"
+                        alt="History icon" width="20" height="20">
+                        <a class="nav-link">History</a>
+                    </li>
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/calendar-check.svg"
+                        alt="Tasks icon" width="20" height="20">
+                        <a class="nav-link">Tasks</a>
+                    </li>
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/account-multiple.svg"
+                        alt="Communities icon" width="20" height="20">
+                        <a class="nav-link">Communities</a>
+                    </li>
+                </ul>  
+
+                <ul class="side-content-b">
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/tune-vertical.svg"
+                        alt="Settings icon" width="20" height="20">
+                        <a class="nav-link">Settings</a>
+                    </li>
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/face-agent.svg"
+                        alt="Support icon" width="20" height="20">
+                        <a class="nav-link">Support</a>
+                    </li>
+                    <li>
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/shield-account.svg"
+                        alt="Privacy icon" width="20" height="20">
+                        <a class="nav-link">Privacy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="header">
+        <div class="photo">
+            <p>IMG</p>
+        </div>
         <div class="logo">Header Logo</div>
         <div class="menu">
-          <ul>
-            <li>header link one</li>
-            <li>header link two</li>
-            <li>header link three</li>
-            <li>header link four</li>
-          </ul>
+        <ul>
+            <li>New</li>
+            <li>Upload</li>
+            <li>Share</li>
+        </ul>
         </div>
-      </div>
+    </div>
+    
+    <div class="article">
+        <div class="card">
+            <p class="title">Super Cool Project</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+            <p class="title">Less Cool Project</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+            <p class="title">Impossible App</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+            <p class="title">Easy Peasy App</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+            <p class="title">Ad Blocker</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+            <p class="title">Money Maker</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+    </div>
 
-      <div class="sidebar">
-        <div class="dash-logo">Dashboard</div>
-        <div class="side-content">Home
+    <div class="anouncements">
+        <div class="window">
+            <p class="title-a">Site Maintenance</p>
+            <p class="title-a">Community Share Day</p>
+            <p class="title-a">Updated Privacy Policy</p>
         </div>
-        <div class="side-content">Profile
-        </div>
-        <div class="side-content">Messages
-        </div>
-        <div class="side-content">History
-        </div>
-        <div class="side-content">Tasks
-        </div>
-        <div class="side-content">Communities
-        </div>
-        <div class="side-content">Settings
-        </div>
-        <div class="side-content">Support
-        </div>
-        <div class="side-content">Privacy
-        </div>
-      </div>
+    </div>
 
-      <div class="article">
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+    <div class="Trending">
+        <div class="feed">
+            <div class="photo">
+                <p>pic</p>
+            </div>
         </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-      </div>
+    </div>
       
     </div>
-  </body>
+    </body>
 </html>
