@@ -71,6 +71,27 @@ nav {
   color: white;
 }
 
+.search-container {
+    display: grid;
+    grid-column: 2 / 6;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search-button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#search-bar {
+    border: none;
+    background-color: aquamarine;
+    margin-left: 30px;
+    padding: 4px 16px;
+    border-radius: 13px;
+    width: 100%;
+}
+
 .header .photo {
   background-color: white;
   color: black;
@@ -83,12 +104,6 @@ nav {
 
 .photo {
     display: grid;
-}
-
-.search-container {
-    display: grid;
-    grid-column: 2 / 6;
-    grid-template-columns: 1fr 1fr;
 }
 
 .logo {
