@@ -9,15 +9,49 @@
     </head>
     <body>
         <div class="container">
-            <div class="search-container">
-                <form action="https://google.com/search" method="get">
-                    <button type="submit" class="search-button">
-                    <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/magnify.svg"
-                    alt="Search icon" width="15" height="15">
-                    </button>
-                    <input id="search-bar" input type="text" placeholder="Search Google..." name="q" class="search-input" aria-label="Search">
-                </form>
-            </div>
+            <header>
+                <div id="header-top">
+                    <div>
+                        <div>
+                            <form action="https://google.com/search" method="get">
+                                <button type="submit" class="search-button">
+                                <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/magnify.svg"
+                                alt="Search icon" width="15" height="15">
+                                </button>
+                        </div>
+                            <input id="search-bar" input type="text" placeholder="Search Google..." name="q" class="search-input" aria-label="Search">
+                        </form>
+                    </div>
+                    <div id="user-top">
+                        <button type="submit" class="notification-button">
+                        <img src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/bell-ring.svg"
+                        alt="notification icon" width="25" height="25">
+                        </button>
+                        <div class="photo">
+                        <img class="user-icon" src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/155949712.png"
+                        alt="User icon of Katusyo">
+                        <p class="user-name">Katusyo</p>
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <div id="user-info">
+                        <img class="user-icon" src="/home/vanillaplus/Projects/Dashboard/dashboard/icons/155949712.png"
+                        alt="User icon of Katusyo">
+                        <div>
+                            <p>Hi there,</p>
+                            <p class="user-name">Katusyo (@Katsuyo)</p>
+                        </div>
+                    </div>
+                    <div class="menu">
+                    <ul>
+                        <li>New</li>
+                        <li>Upload</li>
+                        <li>Share</li>
+                    </ul>
+                    </div>
+                </div>
+            </header>
 
     <aside class="left">
         <div class="sidebar">
@@ -81,20 +115,6 @@
             </nav>
         </div>
     </aside>
-
-    <div class="header">
-        <div class="photo">
-            <p>IMG</p>
-        </div>
-        <div class="logo">Header Logo</div>
-        <div class="menu">
-        <ul>
-            <li>New</li>
-            <li>Upload</li>
-            <li>Share</li>
-        </ul>
-        </div>
-    </div>
     
     <div class="article">
         <div class="card">
@@ -122,19 +142,21 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
         </div>
     </div>
-
-    <div class="anouncements">
-        <div class="window">
-            <p class="title-a">Site Maintenance</p>
-            <p class="title-a">Community Share Day</p>
-            <p class="title-a">Updated Privacy Policy</p>
+    <div>
+        <div class="anouncements">
+            <div class="window">
+                <p class="title-a">Site Maintenance</p>
+                <p class="title-a">Community Share Day</p>
+                <p class="title-a">Updated Privacy Policy</p>
+            </div>
         </div>
     </div>
-
-    <div class="Trending">
-        <div class="feed">
-            <div class="photo">
-                <p>pic</p>
+    <div>  
+        <div class="Trending">
+            <div class="feed">
+                <div class="photo">
+                    <p>pic</p>
+                </div>
             </div>
         </div>
     </div>

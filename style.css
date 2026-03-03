@@ -62,19 +62,71 @@ nav {
     cursor: pointer;
 }
 
-.header {
+header {
+  position: relative;
+  padding: 4px 54px 10px 36px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 12px;
+}
+
+#header-top {
+    display: grid;
+    grid-template-columns: auto 230px;
+    column-gap: clamp(25px, 8vw, 100px);
+}
+
+#header-top div {
+  display: flex;
+  align-items: center;
+}
+
+#user-top .user-icon {
+  display: grid;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   background-color: #393f4d;
   height: 200px;
   width: 1000px;
   color: white;
 }
 
-.search-container {
-    display: grid;
-    grid-column: 2 / 6;
-    grid-template-columns: 1fr 1fr;
+#user-info {
+  display: grid;
+  column-gap: 32px;
+  grid-template-columns: 40px auto;
+}
+
+#user-info .user-icon {
+  display: grid;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#user-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+#user-info p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+#user-info .user-name {
+  font-size: 1.3rem;
 }
 
 .search-button {
@@ -83,27 +135,31 @@ nav {
     cursor: pointer;
 }
 
-#search-bar {
-    border: none;
-    background-color: aquamarine;
-    margin-left: 30px;
-    padding: 4px 16px;
-    border-radius: 13px;
-    width: 100%;
+.notification-button {
+  border: none;
+  background-color: white;
+  height: 30px;
+  cursor: pointer;
 }
 
-.header .photo {
-  background-color: white;
+#search-bar {
+  border: none;
+  background-color: aquamarine;
+  margin-left: 30px;
+  padding: 4px 16px;
+  border-radius: 13px;
+  flex-grow: 1;
+}
+
+
+.container{
+  background-color: green;
   color: black;
   font-size: 12px;
   font-weight: normal;
   border-radius: 50%;
   height: 25px;
   width: 25px;
-}
-
-.photo {
-    display: grid;
 }
 
 .logo {
@@ -166,7 +222,4 @@ nav {
     font-size: 20px;
     gap: 15px;
     background-color: black;
-}
-
-.window {
 }
