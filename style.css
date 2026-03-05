@@ -3,13 +3,17 @@
   padding: 0;
 }
 
-.container {
+body {
   display: grid;
   grid-template-columns: clamp(210px, 20vw, 250px) 1fr;
   grid-template-rows: 135px 1fr;
   min-height: 100vh;
   box-sizing: border-box;
-  margin: 0;
+}
+
+.container {
+  display: grid;
+  width: 100%;
 }
 
 .container div {
@@ -66,6 +70,7 @@ header {
   position: relative;
   padding: 4px 54px 10px 36px;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr;
   row-gap: 12px;
 }
@@ -88,21 +93,41 @@ header {
   border-radius: 50%;
 }
 
+.search-button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.notification-button {
+  border: none;
+  background-color: white;
+  height: 30px;
+  cursor: pointer;
+}
+
+#search-bar {
+  border: none;
+  background-color: aquamarine;
+  margin-left: 30px;
+  padding: 4px 16px;
+  border-radius: 13px;
+  flex-grow: 1;
+}
+
 .header-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  background-color: #393f4d;
-  height: 200px;
-  width: 1000px;
-  color: white;
+  flex-basis: 100%;
+  width: 100%;
 }
 
 #user-info {
   display: grid;
-  column-gap: 32px;
-  grid-template-columns: 40px auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
 }
 
 #user-info .user-icon {
@@ -129,28 +154,28 @@ header {
   font-size: 1.3rem;
 }
 
-.search-button {
-    border: none;
-    background-color: white;
-    cursor: pointer;
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
 }
 
-.notification-button {
-  border: none;
-  background-color: white;
-  height: 30px;
-  cursor: pointer;
-}
-
-#search-bar {
+#buttons button {
   border: none;
   background-color: aquamarine;
-  margin-left: 30px;
-  padding: 4px 16px;
-  border-radius: 13px;
-  flex-grow: 1;
+  padding: 10px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color o.3s ease;
 }
 
+#buttons button:hover {
+  background-color: rgb(177, 253, 228);
+}
 
 .container{
   background-color: green;
@@ -160,10 +185,6 @@ header {
   border-radius: 50%;
   height: 25px;
   width: 25px;
-}
-
-.logo {
-  justify-self: start;
 }
 
 .menu {
@@ -181,38 +202,74 @@ header {
   list-style-type: none;
 }
 
-.article {
+projects {
   display: grid;
-  grid-row: 3 / 3;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  background-color: #bccbde;
+  padding: 16px 28px 40px 16px;
+  grid-template-columns: auto clamp(150px, 20vw, 275px);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "pro an" "pro trend";
+  grid-gap: 22px 20px;
 }
 
-.article p {
-  font-size: 18px;
-  font-family: sans-serif;
-  color: white;
-  text-align: left;
+projects h2 {
+  margin: 8px 0;
+  font-size: 1.1rem;
 }
 
-.article .card {
-  height: 200px;
+#projects-sect, #announcements-sect, #trending-sect {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#projects-sect {
+  grid-area: pro;
+}
+
+#announcements-sect {
+  grid-area: an;
+}
+
+#trending-sect {
+  grid-area: trend;
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 22px 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 20px auto 20px;
   background-color: #FFFFFF;
+  border-radius: 6px;
+  border-left: 6px solid var(--color-2);
+  padding: 25px 18px 21px 18px;
   color: black;
-  text-align: center;
 }
 
-.card p {
+.discription {
   padding: 5px;
   color: black;
   font-weight: normal;
   font-size: 14px;
+  margin: 0;
 }
 
-.card .title {
+.project-icons {
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  column-gap: 24px;
+  justify-self: end;
+}
+
+.title {
   font-size: 18px;
   text-align: center;
+  margin: 0;
+  font-weight: bold;
 }
 
 .announcements .window {
