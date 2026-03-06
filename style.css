@@ -247,6 +247,7 @@ projects h2 {
   border-radius: 6px;
   border-left: 6px solid var(--color-2);
   padding: 25px 18px 21px 18px;
+  box-shadow: 2px 3px 4px rgba(0,0, 0, 0.2);
   color: black;
 }
 
@@ -260,9 +261,16 @@ projects h2 {
 
 .project-icons {
   display: grid;
-  grid-template-columns: 20px 20px 20px;
+  grid-template-columns: 30px 30px 30px;
   column-gap: 24px;
   justify-self: end;
+  cursor: pointer;
+}
+
+.project-icons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .title {
