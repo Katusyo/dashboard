@@ -225,14 +225,6 @@ projects h2 {
   grid-area: pro;
 }
 
-#announcements-sect {
-  grid-area: an;
-}
-
-#trending-sect {
-  grid-area: trend;
-}
-
 #projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -280,11 +272,27 @@ projects h2 {
   font-weight: bold;
 }
 
-.announcements .window {
+.announcements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto auto auto;
     color: black;
     font-size: 20px;
     gap: 15px;
-    background-color: black;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid rgb(177, 253, 228);
+}
+
+.announcement-t {
+  margin: 14px 0 1px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.announcement-d {
+  margin: 0 0 14px;
+  font-size: 0.65rem;
 }
