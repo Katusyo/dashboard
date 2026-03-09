@@ -5,7 +5,7 @@
 
 body {
   display: grid;
-  grid-template-columns: clamp(210px, 20vw, 250px) 1fr;
+  grid-template-columns: clamp(210px, 20vw, 200px) 1fr;
   grid-template-rows: 135px 1fr;
   min-height: 100vh;
   box-sizing: border-box;
@@ -34,7 +34,7 @@ body {
   position: sticky;
   top:0;
   height: 100vh;
-  width: 30vh;
+  width: 25vh;
   box-sizing: border-box;
 }
 
@@ -73,7 +73,8 @@ header {
   display: grid;
   grid-template-rows: auto 1fr;
   row-gap: 12px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 6px -5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 #header-top {
@@ -143,9 +144,8 @@ div .header-bottom {
 }
 
 #user-info div {
-  display: flex;
+  display: grid;
   flex-direction: column;
-  justify-content: center;
   gap: 3px;
 }
 
@@ -191,11 +191,13 @@ div .header-bottom {
 projects {
   display: grid;
   position: relative;
-  padding: 0 28px 40px 16px;
+  padding: 38px 28px 40px 30px;
   grid-template-columns: auto clamp(150px, 20vw, 275px);
   grid-template-rows: 1fr;
   grid-template-areas: "pro an" "pro trend";
   grid-gap: 22px 20px;
+  background-color: beige;
+  margin: 0 0 0 -2px auto;
 }
 
 projects h2 {
@@ -267,6 +269,8 @@ projects h2 {
     gap: 15px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
+    background-color: white;
+    padding: 0 20px 0 20px;
 }
 
 .announcement:not(:last-child) {
@@ -292,6 +296,7 @@ projects h2 {
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 16px;
+  background-color: white;
 }
 
 .trend {
