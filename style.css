@@ -69,22 +69,24 @@ nav {
 
 header {
   position: relative;
-  padding: 0 54px 10px 36px;
+  padding: 0 54px 0 36px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr;
   row-gap: 12px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 #header-top {
     display: grid;
     grid-template-columns: auto 230px;
     column-gap: clamp(25px, 8vw, 100px);
+    padding: 0;
 }
 
 #header-top div {
   display: flex;
   align-items: center;
+  padding-bottom: 0;
 }
 
 #user-top .user-icon {
@@ -109,7 +111,7 @@ header {
 
 #search-bar {
   border: none;
-  background-color: aquamarine;
+  background-color: rgba(71, 249, 255, 0.884);
   margin-left: 30px;
   padding: 4px 16px;
   border-radius: 13px;
@@ -121,8 +123,10 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  flex-basis: 100%;
-  width: 100%;
+}
+
+div .header-bottom {
+  padding: 0;
 }
 
 #user-info {
@@ -163,7 +167,7 @@ header {
 
 #buttons button {
   border: none;
-  background-color: aquamarine;
+  background-color: rgba(71, 249, 255, 0.884);
   padding: 10px 20px;
   text-align: center;
   box-sizing: border-box;
@@ -178,10 +182,16 @@ header {
   background-color: rgb(177, 253, 228);
 }
 
+#space {
+  display: grid;
+  padding: 10px;
+  margin: 10px;
+}
+
 projects {
   display: grid;
   position: relative;
-  padding: 95px 28px 40px 16px;
+  padding: 0 28px 40px 16px;
   grid-template-columns: auto clamp(150px, 20vw, 275px);
   grid-template-rows: 1fr;
   grid-template-areas: "pro an" "pro trend";
@@ -214,9 +224,9 @@ projects h2 {
   grid-template-rows: 20px auto 20px;
   background-color: #FFFFFF;
   border-radius: 6px;
-  border-left: 6px solid var(--color-2);
+  border-left: 6px solid rgba(71, 249, 255, 0.884);
   padding: 25px 18px 21px 18px;
-  box-shadow: 2px 3px 4px rgba(0,0, 0, 0.2);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
   color: black;
 }
 
@@ -260,7 +270,7 @@ projects h2 {
 }
 
 .announcement:not(:last-child) {
-  border-bottom: 1px solid rgb(177, 253, 228);
+  border-bottom: 1px solid rgba(71, 249, 255, 0.884);
 }
 
 .announcement-t {
