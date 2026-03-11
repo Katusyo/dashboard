@@ -8,7 +8,6 @@ body {
   grid-template-columns: 250px 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
-  box-sizing: border-box;
 }
 
 .container {
@@ -93,6 +92,10 @@ header {
   padding-bottom: 0;
 }
 
+.user-name {
+  margin: 0;
+}
+
 #user-top {
   display: grid;
   grid-template-columns: auto auto;
@@ -105,6 +108,19 @@ header {
   height: 35px;
   width: 35px;
   border-radius: 50%;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.photo {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 10px;
 }
 
 .search-button {
@@ -122,6 +138,14 @@ header {
 
 #header-top .search-area {
   display: grid;
+}
+
+.search-area form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
 }
 
 #search-bar {
@@ -214,12 +238,12 @@ projects {
   grid-row: 2;
   position: relative;
   padding: 20px;
+  height: 100%;
   grid-template-columns: auto clamp(150px, 20vw, 275px);
   grid-template-rows: 1fr;
   grid-template-areas: "pro an" "pro trend";
   grid-gap: 22px 20px;
   background-color: beige;
-  margin: 0 0 0 -2px auto;
 }
 
 projects h2 {
