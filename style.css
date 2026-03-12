@@ -10,11 +10,6 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  display: grid;
-  width: 100%;
-}
-
 .container div {
   padding: 15px;
   font-size: 32px;
